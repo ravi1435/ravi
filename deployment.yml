@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ravi
+  name: ravi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ravi
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ravi
+    spec:
+      containers:
+      - image: vimal13/lw
+        name: lw
+        resources: {}
+status: {}
